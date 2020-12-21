@@ -38,6 +38,7 @@ source_external_id <- lapply(1:i,extract_external_id)
 source_url <- lapply(1:i,extract_url)
 source_description <- lapply(1:i,extract_description)
 
+#Funciones para convertir a String
 toString_source_name <- function(i){
   toString(source_name[[i]])
 }
@@ -59,6 +60,7 @@ source_external_id <- lapply(1:i,toString_source_external_id)
 source_url <- lapply(1:i,toString_source_url)
 source_description <- lapply(1:i,toString_source_description)
 
+#Construción del DataFrame
 df_source_name <- data.frame(matrix(unlist(source_name), nrow=length(source_name), byrow=T),stringsAsFactors=FALSE)
 colnames(df_source_name)[1] <- 'source_name'
 
