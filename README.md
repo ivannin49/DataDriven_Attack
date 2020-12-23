@@ -6,7 +6,7 @@ Fichero en R que construye el dataframe en crudo de MITRE ATTACK a partir de un 
 
 ## Explicación del schema
 
-### Type: Identifica el tipo u "origen" de un ataque. 
+#### Type: Identifica el tipo u "origen" de un ataque. 
 The types within this JSON are the following (as well as the common wording used for this type):
 * attack-pattern (Techniques)
 * relationship (This is a unique type that contains relationships between types)
@@ -19,4 +19,4 @@ The types within this JSON are the following (as well as the common wording used
 * x-mitre-matrix (MITRE ATT&CK MATRIX)(unused)
 * marking-definition (unused)
 
-### Revoked: Indica si esta parchead/solucionado o no (TREU, FALSE)
+#### Revoked: Indica si esta parchead/solucionado o no (TREU, FALSE)
